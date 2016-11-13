@@ -2,13 +2,27 @@
 /* CSS Document */
 
 #contenedor {
-	/*position: absolute;
-	height: 1280px;
-	width: 800px;*/
+	padding: 170px 10px 0 10px;
 }
-header {
-	background-color:#FFF;
-	background-color:rgba(255,255,255,0.5)
+.navbar-default {
+	background-color: #FFF;
+}
+.navbar-default:after {
+	content: "";
+	display: block;
+  	position: absolute;
+  	left: 0px;
+  	right: 0px;
+  	height: 5px;
+    background-image: -webkit-linear-gradient(0deg, #8ddf43 20%, #f39323 20%, #f39323 40%, #2eaae1 40%, #2eaae1 60%, #e72679 60%, #e72679 80%, #00a09a 80%, #00a09a 100%);
+    background-image: -moz-linear-gradient(0deg, #8ddf43 20%, #f39323 20%, #f39323 40%, #2eaae1 40%, #2eaae1 60%, #e72679 60%, #e72679 80%, #00a09a 80%, #00a09a 100%);
+ 	background-image: -ms-linear-gradient(0deg, #8ddf43 20%, #f39323 20%, #f39323 40%, #2eaae1 40%, #2eaae1 60%, #e72679 60%, #e72679 80%, #00a09a 80%, #00a09a 100%);
+ 	background-image: -o-linear-gradient(0deg, #8ddf43 20%, #f39323 20%, #f39323 40%, #2eaae1 40%, #2eaae1 60%, #e72679 60%, #e72679 80%, #00a09a 80%, #00a09a 100%);
+  	background-size: cover;
+   	bottom: 0px;
+}
+.navbar-default .navbar-collapse {
+	border: none;
 }
 .navbar-brand {
 	min-height: 140px;
@@ -16,15 +30,161 @@ header {
 .navbar-brand img {
 	max-height: 100%;
 }
+#buscar{
+	color: black;
+    border-radius: 8px;
+    font-size: 17px;
+    background-color: rgba(0, 204, 204, 0.6);
+    font-weight: bold;
+    padding: 6px 20px;
+    border: 1px solid #0cc;
+}
+#buscar::-webkit-input-placeholder { color: white; }
+#buscar:-moz-placeholder { color: white; }
+#buscar::-moz-placeholder { color: white; }
+#buscar:-ms-input-placeholder { color: white; }
+
+.navbar-nav li a{
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-left: 0;
+}
+.navbar-nav li a.green      {color: #8ddf43;}
+.navbar-nav li a.green:hover{color: #8ddf43;}
+.navbar-nav li a.orange      {color: #f39323;}
+.navbar-nav li a.orange:hover{color: #f39323;}
+.navbar-nav li a.blue      {color: #2eaae1;}
+.navbar-nav li a.blue:hover{color: #2eaae1;}
+.navbar-nav li a.pink      {color: #e72679;}
+.navbar-nav li a.pink:hover{color: #e72679;}
+.navbar-nav li a.aguamarina      {color: #00a09a; padding-right: 0;}
+.navbar-nav li a.aguamarina:hover{color: #00a09a;}
 #derecha {
-	float:right;
+	float: right;
+	margin-top: 50px;
+    max-width: 532px;
 }
 #formulario {
-	margin-top:200px;
-	background-color:#0CC;
-	padding:20px;
+	background-color: rgba(0, 204, 204, 0.6);
+	padding: 20px;
+	border-radius: 15px;
+}
+#formulario .form-horizontal {
+	margin-top: 25px;
+}
+#formulario .form-horizontal .form-control{
+    color: black;
+    border-radius: 8px;
+    text-align: center;
+	font-size: 17px;
+}
+#formulario .form-horizontal .checkbox label{
+	font-size: 16px;
+    color: white;
+}
+#formulario #info {
+	font-size: 21px;
+    text-align: justify;
+    padding: 0 50px 20px;
+    color: white;
+    font-weight: normal;
+}
+#formulario #imagen {
+	text-align:center;
+	margin: 10px auto;
+}
+#formulario #boton {
+    position: absolute;
+    right: 0;
+    background: #0CC;
+    color: white;
+    border: 1px solid white;
+    font-size: 24px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-right: 15px;
+}
+#caracteristicas {
+	margin: 50px auto;
+}
+#caracteristicas .caracteristica {
+	padding: 20px;
+    border: 1px solid #0CC;
+    border-radius: 15px;
+	margin: 10px 0;
+}
+#caracteristicas .caracteristica h3{
+	text-align: center;
+	margin: 0px auto 20px;
+}
+#caracteristicas #caract1 h3{
+	color: #e72679;
+}
+#caracteristicas #caract2 h3{
+	color: #2eaae1;
+}
+#caracteristicas #caract3 h3{
+	color: #8ddf43;
+}
+#caracteristicas .caracteristica p{
+	font-weight: bold;
+	text-align: justify;
 }
 #carrusel {
-	background-color:#0CC;
-	padding:20px;
+	background-color: rgba(0, 204, 204, 0.6);
+	margin: 30px auto;
+	padding: 20px;
+	border-radius: 15px;
+}
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, .0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, .0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .5)), to(rgba(255, 255, 255, .0001)));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, .0001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=1);
+    border-radius: 15px;
+}
+.carousel-control.right {
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .0001) 0%, rgba(255, 255, 255, .5) 100%);
+    background-image: -o-linear-gradient(left, rgba(255, 255, 255, .0001) 0%, rgba(255, 255, 0255, .5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .0001)), to(rgba(255, 255, 255, .5)));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .0001) 0%, rgba(255, 255, 255, .5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=1);
+    border-radius: 15px;
+}
+#carrusel img{
+	margin: 0 auto;
+}
+#footer {
+	margin: 20px 10px;
+}
+#footer .row {
+	text-align: center;
+}
+#footer .copyright{
+	margin: 10px 0;
+}
+#footer .social-share i{
+    width: 1.7em;
+	font-size: 1.7em;
+    line-height: 1.7em;
+    text-align: center;
+    background: #C9C5C5;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+@media only screen and (max-width : 767px) {
+	#derecha {
+		float: none;
+		margin-top: 0;
+	    max-width: 100%;
+	    margin-right: 0;
+	    margin-left: 0;
+	}
+	#formulario #boton {
+		margin-top: 0px;
+	}
+	
 }
